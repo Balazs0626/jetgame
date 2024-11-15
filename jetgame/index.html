@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetGame</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/text.css">
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div id="menu">
+            <canvas id="menuCanvas" width="500" height="500"></canvas>
+            <div class="text-wrapper">
+                <span style="--i:1">J</span>
+                <span style="--i:2">E</span>
+                <span style="--i:3">T</span>
+                <span style="--i:4">G</span>
+                <span style="--i:5">A</span>
+                <span style="--i:6">M</span>
+                <span style="--i:7">E</span>
+            </div>
+            <button id="startBtn">Start</button>
+            <div id="jet-selector">
+                <button id="select-left" class="selectorBtn"><</button>
+                <img id="selectorImg" src="img/player/jet1.png">
+                <button id="select-right" class="selectorBtn">></button>
+            </div>
+        </div>
+
+        <div id="game">
+            <div id="gameStats">
+                <p id="score">Score: 0</p>
+                <div>
+                    <img src="img/speaker.png" width="25" height="25">
+                    <input type="range" min="0" max="100" value="50" id="soundSlider">
+                </div>
+            </div>
+            <canvas id="gameBoard" width="500" height="500"></canvas>
+            <div id="gameControls">
+                <div id="arrows">
+                    <img src="img/controls/arrow.png" width="50" height="50">
+                    <p>- Control</p>
+                </div>
+                <div id="shoot">
+                    <img src="img/controls/space.png" width="50" height="20">
+                    <p>- Shoot</p>
+                </div>
+                <div id="pause">
+                    <img src="img/controls/p.png" width="30" height="30">
+                    <p>- Pause</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

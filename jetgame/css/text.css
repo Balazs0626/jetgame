@@ -1,0 +1,25 @@
+.text-wrapper {
+    position: relative;
+    font-size: 3em;
+    left: 100px;
+    top: 50px;
+}
+
+.text-wrapper span {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 5px;
+    animation: waveAnim 1s infinite;
+    animation-delay: calc(.3s * var(--i));
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+@keyframes waveAnim {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-15px);
+    }
+}
